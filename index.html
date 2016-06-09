@@ -206,6 +206,7 @@
       // Udpate the highlight color from orange
       var newHighlight = hexToComplimentary(color);
       $(".block .opt").css("background-color", newHighlight);
+      $(".block .header").css("color", newHighlight);
       $(".block .opt a").css("color", color);
       $(".block .opt:hover a").css("color", shadeColor(color, 75));
       $(".block .opt:hover").css("background-color", shadeColor(newHighlight, -25));
