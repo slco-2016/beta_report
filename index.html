@@ -179,15 +179,18 @@
     });
 
 
-    $(document).mousemove(function(e){
+    $(document).mousemove( function (e) {
       
       // Work out scales every time in case of resize
       var scaleX = window.innerWidth/255;
       var scaleY = window.innerHeight/255;
       
+      var x = e.pageX ? e.pageX : 120;
+      var y = e.pageY ? e.pageY : 120;
+
       // Create rgb color vals based on position
-      var col1 = Math.floor(e.pageX/scaleX);
-      var col2 = Math.floor(e.pageY/scaleY);
+      var col1 = Math.floor(x/scaleX);
+      var col2 = Math.floor(y/scaleY);
       
       // Build rgb
       var rgb  = new Array(col1, col2, 255);
