@@ -79,6 +79,20 @@ $(document).mousemove( function (e) {
   $(".block .opt a").css("color", color);
   $(".block .opt:hover a").css("color", shadeColor(color, 75));
   $(".block .opt:hover").css("background-color", shadeColor(newHighlight, -25));
+
+  // Move the moon
+  var moonX = (-x - window.innerWidth/2)/(window.innerWidth/2) * 50;
+  var moonY = (y)/(window.innerHeight/2) * 20;
+  $(".moon").stop().animate({
+    marginLeft: moonX + "px",
+    marginBottom: moonY + "px"
+  }, 50);
+
+  // Move the bg
+  $(".stars").stop().animate({
+    backgroundPositionX: -moonX + "px",
+    backgroundPositionY: moonY + "px"
+  }, 50);
 }); 
 
 function convertHex (rgb){

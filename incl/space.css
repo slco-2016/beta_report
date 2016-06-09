@@ -2,6 +2,13 @@
   z-index: 1;
 }
 
+.bg .moon {
+  position: fixed;
+  z-index: 5;
+  bottom: -175px;
+  width: 120%;
+}
+
 /* Credit: http://codepen.io/Nazar_TheVis/pen/zqXMqP */
 
 @keyframes move-twink-back {
@@ -90,12 +97,14 @@
 }
 
 .stars {
-  background: #000 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+  width: 150%;
+  height: 150%;
+  background: #000 url(../imgs/stars.png) repeat top center;
   z-index: 0;
 }
 
 .twinkling {
-  background: transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  background: transparent url(../imgs/twinkling.png) repeat top center;
   z-index: 1;
   -moz-animation: move-twink-back 200s linear infinite;
   -ms-animation: move-twink-back 200s linear infinite;
@@ -105,7 +114,7 @@
 }
 
 .clouds {
-  background: transparent url(http://sylvaingarnot.fr/media/clouds.png) repeat top center;
+  background: transparent url(../imgs/clouds.png) repeat top center;
   z-index: 3;
   -moz-animation: move-clouds-back 200s linear infinite;
   -ms-animation: move-clouds-back 200s linear infinite;
