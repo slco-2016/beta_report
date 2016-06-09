@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CFA: Team Salt Lake Q1 Report</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="viz/dep.js"></script>
+
+  </head>
+
+  <style>
+    
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0px;
+      padding: 0px;
+      background-color: #FFF;
+      color: #4BAEFF;
+      min-width: 900px;
+    }
+
+    a, a:hover, a:visited, a:active {
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    header  {
+      font-weight: 700;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    header div {
+      float: right;
+      margin-left: 20px;
+      padding: 10px 13px 10px 13px;
+      cursor: pointer;
+    }
+
+    header div a:hover {
+      color: orange;
+    }
+
+    header div.inverse {
+      background-color: #4BAEFF;
+      color: #FFF;
+    }
+
+    header div.inverse:hover {
+      background-color: orange;
+    }
+
+    header a, header a:hover, header a:visited, header a:active {
+      color: #4BAEFF;
+    }
+
+    .title {
+      width: 100%;
+      text-align: center;
+      margin-top: 10%;
+      color: #4BAEFF;
+    }
+
+    .title .t-content {
+      text-align: left;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 4vw;
+    }
+
+    .title .t-content .big {
+      font-size: 10vw;
+      font-weight: 900;
+      line-height: 0.8em;
+    }
+
+    .blocks {
+      margin-top: 30px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 1.4em;
+      color: #FFF;
+    }
+
+    .blocks .fa { 
+      font-size: 25px;
+      padding-right: 10px;
+    }
+
+    .blocks .fa, .blocks .header {
+      line-height: 50px;
+    }
+
+    .block {
+      background-color: #4BAEFF;
+      width: 23%;
+      line-height: 2.5em;
+      padding: 3px;
+      float: left;
+      margin-left: 1%;
+    }
+
+    .block .opt, .block .header {
+      padding: 0px 10px 0px 10px;
+    }
+
+    .block .opt {
+      background-color: #004b6a;
+      font-size: .9em;
+    }
+
+    .block .opt:hover {
+      background-color: orange;
+    }
+
+    .block .opt:not(:first-child) {
+      margin-top: 3px;
+    }
+
+  </style>
+
+  <body>
+
+    <header>
+      <a href="http://slco-2016.github.io/q1_report_long/">
+        <div class="inverse">
+          View Full Report
+        </div>
+      </a>
+      <div>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=slco-cfa16&url=http%3A%2F%2Fc4a.me%2Fslco-alpha">Tweet</a>
+      </div>
+      <div>
+        <a href="mailto:slco@codeforamerica.org">Contact Us</a>
+      </div>
+    </header>
+
+    <div class="title">
+      <div class="t-content">
+        <div class="top">
+          Salt Lake County & Code for America, 2016
+        </div>
+        <div class="big">
+          Research Review
+        </div>
+      </div>
+    </div>
+
+    <div class="blocks">
+
+      <div class="block">
+        <div class="header">
+          <i class="fa fa-map"></i>
+          Roadmap
+        </div>
+        <div class="opt">
+          <a href="pages/about_intro.html">Introduction</a>
+        </div>
+        <div class="opt">
+          <a href="pages/about_challenge.html">Challenge</a>
+        </div>
+        <div class="opt">
+          <a href="pages/about_method.html">Method</a>
+        </div>
+        <div class="opt">
+          <a href="viz/map.html">Engagement Map</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="header">
+          <i class="fa fa-clipboard"></i>
+          Research
+        </div>
+        <div class="opt">
+          <a href="pages/research_process.html">Research Process</a>
+        </div>
+        <div class="opt">
+          <a href="pages/findings_archetypes.html">Archetypes</a>
+        </div>
+        <div class="opt">
+          <a href="pages/findings_insights.html">Insights</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="header">
+          <i class="fa fa-arrow-circle-right"></i>
+          Next Steps
+        </div>
+        <div class="opt">
+          <a href="pages/next_challenge.html">Challenge Revisited</a>
+        </div>
+        <div class="opt">
+          <a href="pages/next_feedback.html">Evaluating Feedback</a>
+        </div>
+        <div class="opt">
+          <a href="pages/next_prototyping.html">Prototyping</a>
+        </div>
+        <div class="opt">
+          <a href="http://goo.gl/forms/BJdUm8v8Al">Take the Survey</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="header">
+          <i class="fa fa-database"></i>
+          Explore Data
+        </div>
+        <div class="opt">
+          <a href="viz/statcompare.html">Attribute Distributions</a>
+        </div>
+        <div class="opt">
+          <a href="viz/tree.html">Archetype Tree</a>
+        </div>
+        <div class="opt">
+          <a href="viz/boxes.html">Character Attributes</a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+    window.onload = function () {
+
+      var index = 0;
+      $(".opt").each(function () { 
+        index += 1;
+        var time = index * 100;
+        var that = this;
+        setTimeout(function () {$(that).slideToggle(); }, time); 
+      });
+    };
+
+    $(".block").mouseenter(function () {
+      $(".opt").each(function () {
+        if ($(this).css("display") !== "none") $(this).hide(); 
+      });
+      $(this).children(".opt").each(function () {
+        if ($(this).css("display") == "none") $(this).show(); 
+      });
+    });
+
+
+    $(".block").mouseleave(function () {
+      $(".opt").each(function () {
+        if ($(this).css("display") !== "none") $(this).hide(); 
+      });
+    });
+
+    $(".opt").click(function () {
+      var a = $(this).find("a");
+      if (a.length > 0) {
+        a = a[0];
+        try {
+          window.location = "http://slco-2016.github.io/q1_report/" + $(a).attr('href');
+        } catch (e) { console.log("Err: ", e); }
+      }
+    });
+
+    
+    $(".survey").click(function () {
+      var a = $(this).find("a");
+      if (a.length > 0) {
+        a = a[0];
+        try {
+          window.location = $(a).attr('href');
+        } catch (e) { console.log("Err: ", e); }
+      }
+    });
+  </script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77005200-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
