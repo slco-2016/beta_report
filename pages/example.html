@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CFA: Team Salt Lake Q1 Report</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <script src="../viz/dep.js"></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="content">
+
+        <div class="title">
+          <a href="../index.html">
+            Salt Lake County & Code for America, 2016 <b>Research Review</b>
+          </a>
+        </div>
+
+        <div class="survey">
+          <a href="http://goo.gl/forms/BJdUm8v8Al">Take our Survey</a>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="content">
+
+      <div class="right-opts">
+        <div class="opt inverse">
+          <a href="http://slco-2016.github.io/q1_report_long/">full report</a>
+        </div>
+        <div class="opt">
+          <a href="https://twitter.com/intent/tweet?button_hashtag=slco-cfa16&url=http%3A%2F%2Fc4a.me%2Fslco-alpha">tweet</a>
+        </div>
+        <div class="opt">
+          <a href="mailto:slco@codeforamerica.org">email</a>
+        </div>
+      </div>
+
+      <div class="header">
+        Challenge
+      </div>
+
+      <div class="main">
+        <div class="left">
+          <h3>
+            Initial hypothesis
+          </h3>
+          <p>
+            People are failing to appear to court appearances and comply with supervision requirements because they forget their appointments.
+          </p>
+
+          <p><i>
+            <span class="blue">"They just get sucked into the system."</span> - Probation Case Manager with Criminal Justice Services, Salt Lake County
+          </i></p>
+
+          <h3>
+            Cyclical
+          </h3>
+          <p>
+            The potential exists for an individual to become stuck in highly punitive cycles within the justice system, regardless of personal motivations. 
+          </p>
+          <p>
+            61% of jail inmates have prior sentences to probation and 58% of jail inmates have prior sentences to incarceration
+            (Bureau of Justice Statistics, Survey of Inmates in Local Jails, 2002, Table 8, Number of prior sentences to probation or incarceration for jail inmates, 2002 and 1996)
+          </p>
+          <p>
+            <span class="blue">Ensuring success in Pretrial and Probation services have the potential to keep people from serving jail time over and over.</span>
+          </p>
+          <p>
+            Can we help facilitate success in helping people comply with their supervision?
+          </p>
+
+          <h5>
+            <a href="about_intro.html">
+              <i class="fa fa-chevron-left"></i>
+              Introduction
+            </a>
+            /
+            <a href="about_method.html">
+              Method 
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </h5>
+        </div>
+
+        <div class="right">
+          <img src="imgs/3.jpg"></img>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77005200-1', 'auto');
+  ga('send', 'pageview');
+  
+  $(".survey").click(function () {
+    var a = $(this).find("a");
+    if (a.length > 0) {
+      a = a[0];
+      try {
+        window.location = $(a).attr('href');
+      } catch (e) { console.log("Err: ", e); }
+    }
+  });
+
+</script>
+</html>
