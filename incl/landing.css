@@ -6,6 +6,7 @@ body {
   background-color: #FFF;
   color: #4BAEFF;
   min-width: 900px;
+  cursor: url(../imgs/cursor.svg), auto !important;
 }
 
 .content {
