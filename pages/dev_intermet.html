@@ -39,7 +39,7 @@
 
       <!-- Title of the page -->
       <div class="header">
-        User Research
+        Iterative Metrics
       </div>
 
 
@@ -48,39 +48,68 @@
         <div class="left">
 
           <h3>
-            Overview
+            Background on Metrics Development
           </h3>
           <p>
-            The learning phase happens through research focused on understanding of different groups involved, their relationships to the justice system and if and how our software reduces the number of people failing to appear. Interviews, observations and idea generating exercises with people in specific roles within the system to gain a deep understanding of common issues that arise as they work and navigate through it.
+            Metrics have been central to development decisions on Team Salt Lake County's projects during this Fellowship. The core measure, particularly early on during each independent project's start was use. Use is a broad measure, naturally, but frequent and sustained attendance (e.g. visitation) to a website or application was deemed fundamental to legitimating continued development efforts.
+          </p>
+          <p>
+            With each endeavor, the team focused first on identifying a singular functionality that was desired and could potentially act as a lever. This core function would be implemented in its most rudimentary form and deployed. Use of that function was then measured. For example, if a button was desired, a button was deployed. The number of times this button was used (e.g. clicked) would indicate it's success or failure in addressing a need.
+          </p>
+          <p>
+            Sustained use played a key secondary role in determining if a project warranted continued investment. In order to give the rudimentary tool a chance, early efforts were also made to promote the tool. Promotion typically took the form of pamphlets, emails from supervisors, and an announcement. In the case of JailRegister, for example, this included an announcement by the Sheriff himself, as well as news coverage by a local paper. Again, investments were limited early on. Returning to the JailRegister example, a mere 2.5 day development sprint was invested, combined with 2 hour-long meetings. Through just this level of investment, we were able to deploy the tool and, thanks to the quick turn-around time, were able to command and maintain the attention of key leadership within the County Jail system. Thanks to this, the tool was unveiled within the week and announced at a joint police chiefs' monthly meeting. Within days, hundreds were logging on to the tool, successfully addressing an immediate need resulting from newly implemented jail booking restrictions.
           </p>
 
           <h3>
-            Wait, isn't is "Build, Measure, Learn?"
+            Early Use Metrics
           </h3>
           <p>
-            Nope! We meant "Learn, Build, Measure." Actually, it might be more like: "Learn > Build > Measure > Learn > Build > Measure > Learn > Build > Measure > Learn > Build > Measure > Learn ..."
+            Once a tool has been deployed for a period of time, our team assesses its observed use. In conjunction, we roll out early measures for enabling the assessment of said use. Functionally, this typically is Google's Analytics platform. By simply counting how many people are using a tool and how often, we can gauge the tool's success within its context. In addition to measuring visitation, we also include a prominent and easily accessible contact methods. In an earliest iteration, this will simply be a tag on the screen that leads to a "mailto" function. That means, when you click the tag, your browser will prompt your default email platform (often, in the case of government workers, Microsoft Outlook) to open with a pre-filled out subject title and "to" value (our team's group email, slco@codeforamerica.org).
           </p>
           <p>
-            A "first pass" of observation of case managers and clients in their meetings, in-depth interviews with individuals, and participatory activities like card sorts and system mapping enabled us to familiarze ourselves through immersion in the common issues and different perspectives on the problem we are tackling by those who deal with them daily - the clients, case managers, and supervisors.
+            Our initial litmus to determine if a tool will then be two fold. First, we assess the Google Analytics data. If use is high (within the context of the deployment) or the response is vocal, we can determine that the tool passes this early usefulness test. Why do we consider the "or?" The earliest implementations of our tools are just that - early. As a result, features are limited and the interface is very rudimentary. Naturally, as the tool satisfies a core need we believe exists, it is intended to be adopted by those who need it most. If these individuals are using it, they can enhance their position (of desiring a full solution) by emailing us. Such "vocalization" of desire can flesh out early numbers and enhance our understanding of how well we "hit the nail on head."
+          </p>
+          <p>
+            If we consider the "Technology Adoption Lifecycle" that was developed at Iowa State University (see above image), we might consider these vocal early adopters to be the "Innovators," if you will, within the organization within which we are deploying our tool. These Innovators can act as a bellwether, indicating that we have developed something that has potential to provide utility to a majority of the workforce within that organization. As a result, low initial numbers can be "good news" if paired with such vocalization.
           </p>
 
           <h3>
-            Focus Areas
+            Growing Metrics with Tool Development
           </h3>
           <p>
-            The two main users we are focusing our research on are the primary users who will interface with the tool, Criminal Justice Services (CJS) staff, often case managers, but could also be therapists or mentors. A main objective of our research was to gain insights about how CJS clients view the justice system, barriers they faced in complying with supervision and support systems that they relied on to help them through their supervision. Also important was learning how staff and clients interact with each other and how our software could be best incorporated into their current workflow.
+            Once a tool's use has been determined sufficient to validate continued development, a second round of user research is implemented to determine prioritization for how to expand core components of the tool. In addition to this, observations of how the user is moving through the site or application are logged. These are used to improve and produce the first pass and subsequent passes at a more "full" implementation of a core design concept for how the user interfaces with the developed product.
           </p>
+          <p>
+            In the case of ClientComm, this meant the inclusion of datetime values for every new component and entity that was created within the application for the second and third rounds of development. Every action, every creation, every update, and every delete was logged in the database. Thus, the database schema was designed to monitor all interaction with the database. Because monitoring was focused on the database, the "front end" or user-facing portion of the application remained flexible. As we were able to observe what actions were most popular and what actions were less popular, we were able to correlate those metrics against user interviews and observed use sessions. 
+          </p>
+          <p>
+            Thanks to the focus on a backend-facing metrics platform, our team was able to cycle through a series of frontend improvements and adjustments, quickly rolling out core features in response to the need of the users (in the case of ClientComm, the case managers). As front-end components could often be lighter and more interoperable with other parts of the application, swapping out pages and components of pages was easy to do and could be performed without interruption, often, to the clients currently using the tool. This uninterrupted flow of service while rolling out updates enables tools like ClientComm to "mature" before the user's eyes, without entangling them in the complexities of the development process (downtime, etc.). 
+          </p>
+
+          <h3>
+            Metrics on a More Mature Platform
+          </h3>
+          <p>
+            ClientComm has reached to a stage that we would hesitate to describe as "mature." Nonetheless, it has been thoroughly vetted at this point (as of the first week in June 2016), and has developed a workflow and user experience that has largely been solidified. In addition, the user interface has been refined and tweaked to a degree that has reached a level of formality from both the development end as well as from an institutional perspective. To elaborate, as more and more users (in ClientComm's case, case managers) begin using the tool, frequent radical changes to the interface and workflow no longer become reasonable. As more and more case managers have been trained and onboarded, it is important that future changes are implemented slowly and with clear intent. Such changes need to be natural and enable users to easily infer the intent behind modifications with no negative impact on the smoothness with which they are able to navigate through the tool.
+          </p>
+          <p>
+            At this point, front-end tools for measuring case manager use can be reasonably deployed as sustained components of the application interface make longitudinal measurement of the front end a feasible endeavor. In the case of ClientComm, for example, Keen.io was used on the front end to monitor user activity from clicks on key pages to duration of time spent by each user on the application and duration by page. In addition, because sufficient historical data has been produced through use of the application over the past two and a half months, a more robust administrative dashboard has been produced.
+          </p>
+          <p>
+            This administrative dashboard allows supervisors to observe overall client activity as well as observe application use over the past 3 months. Included in this page are gauges and charts that help supervisors benchmark current performance against previous weeks and all-time bests. Such measures help supervisors observe ClientComm's use and how staff are using or should be using the tool. Such metrics are critical, particularly in the context of Criminal Justice Services as top-down measures of tool implementation are the norm (as is often the case in many government organization contexts).
+          </p>
+
 
 
           <!-- Bottom navigation -->
           <h5>
-            <a href="proc_lbm.html">
+            <a href="dev_overv.html">
               <i class="fa fa-chevron-left"></i>
-              Learn Build Measure
+              Cycles Overview
             </a>
             /
-            <a href="proc_df.html">
-              Delivery First
+            <a href="dev_currperf.html">
+              Current Performance
               <i class="fa fa-chevron-right"></i>
             </a>
           </h5>
