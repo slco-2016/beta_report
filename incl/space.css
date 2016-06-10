@@ -5,8 +5,9 @@
 .bg .moon {
   position: fixed;
   z-index: 5;
-  bottom: -175px;
-  width: 120%;
+  bottom: -15%;
+  padding-left: 10%;
+  width: 60%;
 }
 
 .bg .ship, .ship2 {
