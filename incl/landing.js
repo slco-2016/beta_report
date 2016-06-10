@@ -3,9 +3,9 @@ window.onload = function () {
   var index = 0;
   $(".opt").each(function () { 
     index += 1;
-    var time = index * 100;
+    var time = index;
     var that = this;
-    setTimeout(function () {$(that).slideToggle(); }, time); 
+    setTimeout(function () {$(that).hide(); }, time); 
   });
 };
 
