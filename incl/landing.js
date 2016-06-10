@@ -46,6 +46,31 @@ $(".survey").click(function () {
   }
 });
 
+setInterval(function () {
+  var s = $(".ship");
+  var y = window.innerHeight + 100;
+  var dy = -100;
+  var x = Math.random() * window.innerWidth/3 - window.innerWidth/3;
+  var dx = x + window.innerWidth + window.innerWidth/3;
+
+  // Pick whether to do left or right ship
+  if (Math.random() > 0.5) {
+    var s = $(".ship2");
+
+    // Update x starting point
+    x = window.innerWidth + window.innerWidth/3;
+    var dx = 0 - (Math.random() * window.innerWidth/3);
+  }
+
+  // Run animations
+  s.css("top", y);
+  s.css("left", x);
+  s.stop().animate({
+    left: dx + "px",
+    top:  dy + "px"
+  }, 3000 + Math.random() * 3000);   
+}, 8000);
+
 
 $(document).mousemove( function (e) {
   
