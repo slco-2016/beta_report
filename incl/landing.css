@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lekton', 'Source Sans Pro', sans-serif;
   margin: 0px;
   padding: 0px;
   background-color: #FFF;
@@ -68,18 +68,18 @@ header a, header a:hover, header a:visited, header a:active {
 }
 
 .title .t-content .bottom {
-  margin-top: -10px;
   margin-bottom: 30px;
-  letter-spacing: 0.25vw;
+  letter-spacing: 0.16vw;
   font-weight: 100;
 }
 
 .title .t-content .big {
-  font-size: 20.3vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20vw;
   font-weight: 900;
   line-height: 0.8em;
-  letter-spacing: -0.5vw;
-  margin-left: -2.5vw;
+  letter-spacing: 1vw;
+  margin-left: -1vw;
 }
 
 .blocks {
