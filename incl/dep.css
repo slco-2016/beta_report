@@ -13,9 +13,10 @@ a, a:hover, a:visited, a:active {
 }
 
 header {
+  font-family: 'Lekton', 'Source Sans Pro', sans-serif;
   width: 100%;
   height: 75px;
-  background-color: #4BAEFF;
+  background-color: #EA7A5F;
   color: #FFF;
 }
 
@@ -28,11 +29,16 @@ header {
 }
 
 header .content .title {
-  color: #004b6a;
+  color: #a83d4c;
   position: absolute;
   padding-bottom: 10px;
   bottom: 0px;
   font-size: 1.25em;
+  font-weight: 700;
+}
+
+header .content .title b {
+  font-weight: 100;
 }
 
 header .content .title:hover {
@@ -40,21 +46,21 @@ header .content .title:hover {
 }
 
 header .survey {
-  background-color: #004b6a;
+  background-color: #a83d4c;
   color: #FFF;
   float: right;
   font-weight: 700;
-  padding: 5px 15px 10px 15px;
+  padding: 10px 15px 10px 15px;
   cursor: pointer;
 }
 
 header .survey:hover {
-  color: #004b6a;
+  color: #a83d4c;
   background-color: #FFF;
 }
 
 .right-opts {
-  color: #4BAEFF;
+  color: #EA7A5F;
   font-weight: 700;
   float: right;
 }
@@ -65,19 +71,19 @@ header .survey:hover {
 }
 
 .right-opts .opt:hover {
-  color: #004b6a;
+  color: #a83d4c;
 }
 
 .right-opts .opt.inverse {
-  color: #004b6a;
+  color: #a83d4c;
 }
 
 .right-opts .opt.inverse:hover {
-  color: #4BAEFF;
+  color: #EA7A5F;
 }
 
 .back {
-  color: #4BAEFF;
+  color: #EA7A5F;
   padding-top: 20px;
   opacity: 0.75;
 }
@@ -88,7 +94,7 @@ header .survey:hover {
 
 .header {
   padding-top: 25px;
-  color: #4BAEFF;
+  color: #EA7A5F;
   font-size: 3em;
   font-weight: 700;
 }
@@ -103,7 +109,7 @@ header .survey:hover {
 }
 
 .header .opt:hover, .header .opt.selected {
-  background-color: #4BAEFF;
+  background-color: #EA7A5F;
   color: #FFF;
 }
 
@@ -112,7 +118,7 @@ header .survey:hover {
 }
 
 .main h1, .main h2, .main h3, .main h4, .main h5 {
-  color: #4BAEFF;
+  color: #EA7A5F;
 }
 
 .main img {
@@ -133,7 +139,7 @@ header .survey:hover {
   margin-top: 10px;
   padding: 0px 0px 0px 0px;
   color: #FFF;
-  background-color: #4BAEFF;
+  background-color: #EA7A5F;
 }
 
 .right img {
@@ -151,7 +157,7 @@ header .survey:hover {
 }
 
 .blue {
-  color: #4BAEFF;
+  color: #EA7A5F;
 }
 
 
