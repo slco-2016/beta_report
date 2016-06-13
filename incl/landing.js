@@ -68,7 +68,7 @@ setInterval(function () {
   s.stop().animate({
     left: dx + "px",
     top:  dy + "px"
-  }, 3000 + Math.random() * 3000);   
+  }, 3000 + Math.random() * 7000);   
 }, 8000);
 
 
@@ -109,8 +109,8 @@ $(document).mousemove( function (e) {
   var moonX = (-x - window.innerWidth/2)/(window.innerWidth/2) * 50;
   var moonY = (y)/(window.innerHeight/2) * 20;
   $(".moon").stop().animate({
-    marginLeft: moonX + "px",
-    marginBottom: moonY + "px"
+    // marginLeft: moonX + "px",
+    // marginBottom: moonY + "px"
   }, 50);
 
   // Move the bg

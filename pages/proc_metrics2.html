@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CFA: Team Salt Lake Mid-Year Report</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300" rel="stylesheet" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lekton:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="../incl/dep.js"></script>
+    <link rel="stylesheet" type="text/css" href="../incl/dep.css">
+
+  </head>
+
+
+  <body>
+
+    <header>
+      <div class="content">
+
+        <!-- Title boilerplate -->
+        <div class="title">
+          <a href="../index.html">
+            Salt Lake County & Code for America, 2016 <b>Mid-Year Report</b>
+          </a>
+        </div>
+
+        <div class="survey">
+          <a href="mailto:slco@codeforamerica.org">Questions? Comments?</a>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="content">
+
+
+      <!-- Title of the page -->
+      <div class="header">        
+        <a href="proc_metrics.html">
+          Iterative Metrics
+        </a>
+        <span class="opt"><a href="proc_metrics1.html">1</a></span>
+        <span class="opt selected"><a href="proc_metrics2.html">2</a></span>
+        <span class="opt"><a href="proc_metrics3.html">3</a></span>
+      </div>
+
+
+      <!-- Main div -->
+      <div class="main">
+        <div class="left">
+
+          <h3>
+            Growing Metrics with Tool Development
+          </h3>
+          <p>
+            Once a tool's use has been determined sufficient to validate continued development, a second round of user research is implemented to determine prioritization for how to expand core components of the tool. In addition to this, observations of how the user is moving through the site or application are logged. These are used to improve and produce the first pass and subsequent passes at a more "full" implementation of a core design concept for how the user interfaces with the developed product.
+          </p>
+          <p>
+            In the case of ClientComm, this meant the inclusion of datetime values for every new component and entity that was created within the application for the second and third rounds of development. Every action, every creation, every update, and every delete was logged in the database. Thus, the database schema was designed to monitor all interaction with the database. Because monitoring was focused on the database, the "front end" or user-facing portion of the application remained flexible. As we were able to observe what actions were most popular and what actions were less popular, we were able to correlate those metrics against user interviews and observed use sessions. 
+          </p>
+          <p>
+            Thanks to the focus on a backend-facing metrics platform, our team was able to cycle through a series of frontend improvements and adjustments, quickly rolling out core features in response to the need of the users (in the case of ClientComm, the case managers). As front-end components could often be lighter and more interoperable with other parts of the application, swapping out pages and components of pages was easy to do and could be performed without interruption, often, to the clients currently using the tool. This uninterrupted flow of service while rolling out updates enables tools like ClientComm to "mature" before the user's eyes, without entangling them in the complexities of the development process (downtime, etc.). 
+          </p>
+
+
+          <!-- Bottom navigation -->
+          <h5>
+            <a href="proc_metrics1.html">
+              <i class="fa fa-chevron-left"></i>
+              Early Use Metrics
+            </a>
+            /
+            <a href="proc_metrics3.html">
+              Metrics on a More Mature Platform
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </h5>
+        </div>
+
+
+        <!-- Right image (optional else hide or remove) -->
+        <div class="right">
+          <img src="imgs/3.jpg"></img>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+
+  <script src="../incl/metrics.js"></script>
+
+</html>
+
+
