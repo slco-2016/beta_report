@@ -19,20 +19,22 @@ $(".block").mouseenter(function () {
 });
 
 
-$(".block").mouseleave(function () {
-  $(".opt").each(function () {
-    if ($(this).css("display") !== "none") $(this).hide(); 
-  });
-});
-
-$(".opt").click(function () {
+// Make sure that when you click on the cirle it also goes to the href
+$(".opt").click(function () {console.log("sss")
   var a = $(this).find("a");
   if (a.length > 0) {
     a = a[0];
     try {
-      window.location = "http://slco-2016.github.io/q1_report/" + $(a).attr('href');
+      window.location = $(a).attr('href');
     } catch (e) { console.log("Err: ", e); }
   }
+});
+
+
+$(".block").mouseleave(function () {
+  $(".opt").each(function () {
+    if ($(this).css("display") !== "none") $(this).hide(); 
+  });
 });
 
 

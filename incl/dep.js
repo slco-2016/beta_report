@@ -19,8 +19,8 @@ if(t==e.dx){for((r||s>e.dy)&&(s=e.dy);++i<a;)u=n[i],u.x=o,u.y=c,u.dy=s,o+=u.dx=M
 window.onload = function () {
 
 	// Make sure that when you click on the cirle it also goes to the href
-	$(".opt").click(function () {
-	  var a = $(this).find("a");console.log(a, "h")
+	$(".opt").click(function () {console.log("sss")
+	  var a = $(this).find("a");
 	  if (a.length > 0) {
 	    a = a[0];
 	    try {
