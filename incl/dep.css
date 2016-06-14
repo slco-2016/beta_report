@@ -123,6 +123,7 @@ header .survey:hover {
 
 .main img {
   width: 100%;
+  margin-bottom: 0px;
 }
 
 .main .left {
@@ -142,6 +143,20 @@ header .survey:hover {
   background-color: #EA7A5F;
 }
 
+.main .subtext {
+  font-size: small;
+  font-style: italic;
+  color: #FFF;
+  background-color: #EA7A5F;
+  border: 1px solid #EA7A5F;
+  margin-top: 0px;
+}
+
+.main .subtext p {
+  padding: 0px 15px 0px 15px;
+}
+
+
 .right img {
   width: 100%;
 }
@@ -159,7 +174,6 @@ header .survey:hover {
 .blue {
   color: #EA7A5F;
 }
-
 
 
 
