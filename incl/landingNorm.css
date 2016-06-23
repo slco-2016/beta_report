@@ -1,0 +1,130 @@
+
+body {
+  font-family: 'Lekton', 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFF;
+  color: #eb6342;
+  min-width: 900px;
+  cursor: url(../imgs/cursor.svg), auto !important;
+}
+
+.content {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+header  {
+  font-weight: 700;
+  position: fixed;
+  z-index: 101;
+  top: 20px;
+  right: 20px;
+}
+
+header div {
+  float: right;
+  margin-left: 20px;
+  padding: 10px 13px 10px 13px;
+  cursor: pointer;
+}
+
+header div a:hover {
+  color: orange;
+}
+
+header div.inverse {
+  background-color: #eb6342;
+  color: #FFF;
+}
+
+header div.inverse:hover {
+  background-color: orange;
+}
+
+header a, header a:hover, header a:visited, header a:active {
+  color: #eb6342;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+  color: #eb6342;
+}
+
+.title .t-content {
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+.title .t-content .bottom {
+  font-weight: 100;
+  margin-left: 0.6vw;
+  font-size: 3vw;
+  margin-bottom: -1.0vw;
+}
+
+.title .t-content .big {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16vw;
+  font-weight: 900;
+  line-height: 0.8em;
+  margin-left: -0.35vw;
+  margin-bottom: 0.35vw;
+}
+
+.blocks {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.4em;
+  color: #FFF;
+}
+
+.blocks .fa { 
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.blocks .fa, .blocks .header {
+  line-height: 50px;
+}
+
+.block {
+  background-color: #eb6342;
+  width: 23%;
+  line-height: 2.5em;
+  padding: 3px;
+  float: left;
+  margin-left: 1%;
+}
+
+.block .opt, .block .header {
+  padding: 0px 10px 0px 10px;
+}
+
+.block .opt {
+  background-color: #a83e4e;
+  font-size: .9em;
+}
+
+.block .opt:hover {
+  background-color: orange;
+}
+
+.block .opt:not(:first-child) {
+  margin-top: 3px;
+}

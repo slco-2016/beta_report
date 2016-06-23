@@ -156,9 +156,31 @@ header .survey:hover {
   padding: 0px 15px 0px 15px;
 }
 
+.quote {
+  background-color: #a83e4e;
+  padding: 20px;
+}
+
+.quote .phrase {
+  font-size: 20px;
+  color: #FFF;
+}
+
+.quote .attribution {
+  text-align: right;
+  font-size: 16px;
+  color: #eb6342;
+  padding-right: 25px;
+}
 
 .right img {
   width: 100%;
+}
+
+.quote::after {
+  content:"";
+  display:block;
+  clear:both;
 }
 
 .right h1, .right h2, .right h3, .right h4, .right p {
