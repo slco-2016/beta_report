@@ -41,6 +41,20 @@ header .content .title b {
   font-weight: 100;
 }
 
+.title .titleFlag {
+  width: 60px;
+  margin-left: -70px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.title:hover .titleFlag {
+  -webkit-filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#FFF')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#FFF')";
+}
+
 header .content .title:hover {
   color: #FFF;
 }
@@ -111,6 +125,26 @@ header .survey:hover {
 .header .opt:hover, .header .opt.selected {
   background-color: #EA7A5F;
   color: #FFF;
+}
+
+.header .navArrows {
+  margin-left: -100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.navArrows img:hover {
+  -webkit-filter: drop-shadow(0px 0px 3px #EA7A5F);
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#EA7A5F')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#EA7A5F')";
+}
+
+.header .navArrows img {
+  width: 35px;
+  float: left;
+  padding: 5px;
+  padding-top: 15px;
 }
 
 .main {
